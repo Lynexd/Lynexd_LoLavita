@@ -35,8 +35,6 @@ function startWebSocket() {
 
 function updateStatus(lanyardData) {
 	const { discord_status, activities, discord_user } = lanyardData;
-	const avatarURL = `https://cdn.discordapp.com/avatars/${discord_user.id}/${discord_user.avatar}.webp?size=256`;
-	elements.avatarImage.src = avatarURL;
 	if (discord_user.banner) {
 		const bannerURL = `https://cdn.discordapp.com/banners/${discord_user.id}/${discord_user.banner}.webp?size=600`;
 		elements.bannerImage.src = bannerURL;
